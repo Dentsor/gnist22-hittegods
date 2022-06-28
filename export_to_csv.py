@@ -1,15 +1,15 @@
 from datetime import datetime
 import sqlite3
 import csv
-from typing import Text
+from typing import List, Text
 
-def generate_csv_filename() -> Text:
-    return datetime.now().strftime("backups/%Y-%m-%d_%H.%M.%S.csv")
+def generate_csv_filename(table: Text) -> Text:
+    return datetime.now().strftime(f"backups/%Y-%m-%d_%H.%M.%S-{table}.csv")
 
-def backup_to_csv(filename: Text):
+def export_to_csv(table: Text, filename: Text):
     with sqlite3.connect("src/db.sqlite3") as connection:
         c: sqlite3.Cursor = connection.cursor()
-        c.execute("SELECT * FROM hittegods_hittegods;")
+        c.execute(f"SELECT * FROM {table};")
 
         columns = [column[0] for column in c.description]
         results = []
@@ -22,8 +22,21 @@ def backup_to_csv(filename: Text):
             for line in results:
                 writer.writerow(line)
 
+def export_table(table: Text):
+    filename: Text = generate_csv_filename(table)
+    print(f"Exporting table '{table}' to '{filename}'...")
+    export_to_csv(table, filename)
+    print("Finished table export.")
+
+
 def run_single_export():
-    filename: Text = generate_csv_filename()
-    print(f"Exporting database to '{filename}'...")
-    backup_to_csv(filename)
-    print("Finished database export.")
+    tables: List[Text] = [
+        "hittegods_hittegods",
+        "hittegods_oppdatering",
+        "hittegods_kategori",
+        "hittegods_type",
+    ]
+    print("\nExporting database to CSV...")
+    for table in tables:
+        export_table(table)
+    print("Finished database export.\n")
