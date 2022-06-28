@@ -1,5 +1,6 @@
 /env
-/backups
+/backups/*
+!/backups/.gitkeep
 .vscode
 /src/staticfiles
 
