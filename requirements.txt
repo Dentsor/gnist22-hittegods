@@ -2,3 +2,4 @@ django==4.0.5
 phonenumbers==8.12.49
 django-phonenumber-field==6.1.0
 django-admin-rangefilter==0.8.4
+whitenoise==6.2.0

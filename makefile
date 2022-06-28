@@ -18,6 +18,8 @@ migrate:
 createsuperuser:
 	. $(env_activate) && python3 src/manage.py createsuperuser
 
+deploy:
+	. $(env_activate) && python3 src/manage.py collectstatic
+
 remove-env:
 	rm -rf env
-

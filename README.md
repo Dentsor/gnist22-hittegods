@@ -3,6 +3,9 @@
 ## Set up
 
 ```bash
+# If necessary, remove database (removes all data! Be careful!)
+#rm src/db.sqlite3
+
 # Install dependencies
 make install
 
@@ -11,6 +14,9 @@ make migrate
 
 # Create user
 make createsuperuser
+
+# Collect static files
+make deploy
 
 # Start server
 make start
