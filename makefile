@@ -28,5 +28,7 @@ loaddata:
 loadsampledata:
 	. $(env_activate) && python3 src/manage.py loaddata "src/hittegods/seeds/sample_data.json"
 
+make all: install makemigrations migrate staticfiles loaddata createsuperuser start
+
 remove-env:
 	rm -rf env

@@ -3,6 +3,11 @@
 ## Set up
 
 ```bash
+# To "kick-start" the process, run 'make all' to run everything necessary and start the server
+make all
+```
+or
+```bash
 # If necessary, remove database (removes all data! Be careful!)
 #rm src/db.sqlite3
 
@@ -16,7 +21,10 @@ make migrate
 make createsuperuser
 
 # Collect static files
-make deploy
+make staticfiles
+
+# Load initial data (optional)
+make loaddata
 
 # Start server
 make start
