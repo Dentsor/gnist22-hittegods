@@ -10,7 +10,6 @@ class HittegodsForm(forms.ModelForm):
         fields = (
             'type',
             'kategori',
-            'registreringstidspunkt',
             'tilleggsinfo',
             'navn',
             'mobilnummer',

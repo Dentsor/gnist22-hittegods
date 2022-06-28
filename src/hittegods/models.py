@@ -1,4 +1,3 @@
-from weakref import proxy
 from django.db import models
 from django.db.models import TextField, CharField, ForeignKey, DateTimeField
 from django.utils import timezone
@@ -45,6 +44,7 @@ class Hittegods(models.Model):
     utlevert_til = CharField(max_length=255, null=False, blank=True)
     utlevert_av = CharField(max_length=255, null=False, blank=True)
     utlevert_tidspunkt = DateTimeField(null=True, blank=True)
+    oppdatert_tidspunkt = DateTimeField(auto_now=True, null=False, blank=False)
 
     def __str__(self):
         return f"{self.lopenummer} : {self.tilleggsinfo[:64]}{'...' if len(self.tilleggsinfo) > 64 else ''}"
@@ -65,6 +65,24 @@ class Funnet(Hittegods):
         verbose_name_plural = "Hittegods - Funnet"
 
 
+class Utlevert(Hittegods):
+    class Meta:
+        proxy = True
+        verbose_name_plural = "Hittegods - Utlevert"
+
+
+class Gjenfunnet(Hittegods):
+    class Meta:
+        proxy = True
+        verbose_name_plural = "Hittegods - Gjenfunnet"
+
+
+class NyligOppdatert(Hittegods):
+    class Meta:
+        proxy = True
+        verbose_name_plural = "Hittegods - Nylig oppdatert"
+
+
 class Oppdatering(models.Model):
     id = models.AutoField(primary_key=True)
     hittegods = ForeignKey(Hittegods, null=False, on_delete=models.CASCADE)
@@ -72,7 +90,7 @@ class Oppdatering(models.Model):
     beskrivelse = TextField(unique=False, null=False, blank=False)
 
     def __str__(self):
-        return f"{self.hittegods.lopenummer}.{self.id}: {self.beskrivelse[:32]}"
+        return f"{self.hittegods.lopenummer}.{self.id}: {self.beskrivelse[:64]}{'...' if len(self.beskrivelse) > 64 else ''}"
 
     class Meta:
         verbose_name_plural = "Oppdateringer"

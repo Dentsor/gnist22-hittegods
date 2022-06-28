@@ -1,0 +1,323 @@
+[
+{
+  "model": "hittegods.kategori",
+  "pk": 1,
+  "fields": {
+    "kategori_navn": "Briller/Solbriller"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 2,
+  "fields": {
+    "kategori_navn": "Sovepose"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 3,
+  "fields": {
+    "kategori_navn": "T-skjorte"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 4,
+  "fields": {
+    "kategori_navn": "Bukse"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 5,
+  "fields": {
+    "kategori_navn": "Ligge-/Sitteunderlag"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 6,
+  "fields": {
+    "kategori_navn": "Diverse"
+  }
+},
+{
+  "model": "hittegods.type",
+  "pk": 1,
+  "fields": {
+    "type_navn": "Mistet"
+  }
+},
+{
+  "model": "hittegods.type",
+  "pk": 2,
+  "fields": {
+    "type_navn": "Funnet"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 1,
+  "fields": {
+    "kategori": 4,
+    "tilleggsinfo": "Grå joggebukse etterlatt ved scenen",
+    "mistet_tidspunkt": null,
+    "mistet_sted": "",
+    "funnet_tidspunkt": "2022-06-28T10:00:00Z",
+    "funnet_sted": "Scenen",
+    "registreringstidspunkt": "2022-06-28T18:40:48Z",
+    "mobilnummer": "+4748202899",
+    "navn": "Kari Nordmann",
+    "gruppe": "7. Oslo",
+    "plassering": "Underleir vest",
+    "type": 2,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:09:38.267Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 2,
+  "fields": {
+    "kategori": 2,
+    "tilleggsinfo": "Rød dunpose forsvant på haiken",
+    "mistet_tidspunkt": "2022-06-28T06:00:00Z",
+    "mistet_sted": "Haik, Forsandskogen",
+    "funnet_tidspunkt": null,
+    "funnet_sted": "",
+    "registreringstidspunkt": "2022-06-28T18:42:39Z",
+    "mobilnummer": "+4748202899",
+    "navn": "Ole Nils Karstensen",
+    "gruppe": "Rødspettene",
+    "plassering": "Underleir sentrum",
+    "type": 1,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:50:46.894Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 3,
+  "fields": {
+    "kategori": 1,
+    "tilleggsinfo": "Rosa solbriller med speidermotiv",
+    "mistet_tidspunkt": "2022-06-28T06:00:00Z",
+    "mistet_sted": "På Haik",
+    "funnet_tidspunkt": "2022-06-28T10:00:00Z",
+    "funnet_sted": "Under den store eika på Nordtangen",
+    "registreringstidspunkt": "2022-06-28T18:57:12Z",
+    "mobilnummer": "+4748282226",
+    "navn": "Oddrun Knutsen",
+    "gruppe": "Tromsø 8",
+    "plassering": "Nordtangen øst",
+    "type": 1,
+    "utlevert_til": "Gunhild Knutsen",
+    "utlevert_av": "Knut Svenske",
+    "utlevert_tidspunkt": "2022-06-28T12:00:00Z",
+    "oppdatert_tidspunkt": "2022-06-28T19:09:38.267Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 4,
+  "fields": {
+    "kategori": 3,
+    "tilleggsinfo": "Grønn med oransje prikker",
+    "mistet_tidspunkt": "2022-06-26T06:00:00Z",
+    "mistet_sted": "",
+    "funnet_tidspunkt": null,
+    "funnet_sted": "",
+    "registreringstidspunkt": "2022-06-28T19:22:41Z",
+    "mobilnummer": "+4790057537",
+    "navn": "Kåre",
+    "gruppe": "Byåsen",
+    "plassering": "",
+    "type": 1,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:30:10.119Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 5,
+  "fields": {
+    "kategori": 4,
+    "tilleggsinfo": "Dongeribukse",
+    "mistet_tidspunkt": null,
+    "mistet_sted": "",
+    "funnet_tidspunkt": "2022-06-22T12:00:00Z",
+    "funnet_sted": "",
+    "registreringstidspunkt": "2022-06-28T19:26:41.834Z",
+    "mobilnummer": "+4791127498",
+    "navn": "Karsten",
+    "gruppe": "Bodø KM",
+    "plassering": "",
+    "type": 2,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:30:23.764Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 6,
+  "fields": {
+    "kategori": 1,
+    "tilleggsinfo": "Briller med styrke, ikke solbriller",
+    "mistet_tidspunkt": null,
+    "mistet_sted": "",
+    "funnet_tidspunkt": null,
+    "funnet_sted": "",
+    "registreringstidspunkt": "2022-06-28T19:27:59.316Z",
+    "mobilnummer": "+4790057537",
+    "navn": "Maren",
+    "gruppe": "-",
+    "plassering": "",
+    "type": 1,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:27:59.325Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 7,
+  "fields": {
+    "kategori": 4,
+    "tilleggsinfo": "Grønn turbukse med lapp på venstre kne",
+    "mistet_tidspunkt": "2022-06-28T08:00:00Z",
+    "mistet_sted": "På haiken",
+    "funnet_tidspunkt": "2022-06-28T09:48:00Z",
+    "funnet_sted": "Scenen",
+    "registreringstidspunkt": "2022-06-28T19:36:35.671Z",
+    "mobilnummer": "+4748202899",
+    "navn": "Barbra",
+    "gruppe": "",
+    "plassering": "",
+    "type": 1,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:36:52.288Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 8,
+  "fields": {
+    "kategori": 5,
+    "tilleggsinfo": "Exped liggeunderlag blåste bort under førstehjelpsoppgave",
+    "mistet_tidspunkt": "2022-06-28T08:00:00Z",
+    "mistet_sted": "I gruppeområdet",
+    "funnet_tidspunkt": "2022-06-28T14:48:00Z",
+    "funnet_sted": "I gruppeområdet til Hundhamaren",
+    "registreringstidspunkt": "2022-06-28T19:41:15.138Z",
+    "mobilnummer": "+4748202899",
+    "navn": "Ole",
+    "gruppe": "Strinda",
+    "plassering": "Bak scenen",
+    "type": 1,
+    "utlevert_til": "Ole",
+    "utlevert_av": "Morten",
+    "utlevert_tidspunkt": "2022-06-28T19:42:28Z",
+    "oppdatert_tidspunkt": "2022-06-28T19:42:38.823Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 9,
+  "fields": {
+    "kategori": 6,
+    "tilleggsinfo": "En bøttehatt fra H&M",
+    "mistet_tidspunkt": null,
+    "mistet_sted": "",
+    "funnet_tidspunkt": "2022-06-28T16:14:00Z",
+    "funnet_sted": "Scenen",
+    "registreringstidspunkt": "2022-06-28T19:44:02.445Z",
+    "mobilnummer": "+4748202899",
+    "navn": "Marius",
+    "gruppe": "Ytterøya",
+    "plassering": "",
+    "type": 2,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:44:55.459Z"
+  }
+},
+{
+  "model": "hittegods.hittegods",
+  "pk": 10,
+  "fields": {
+    "kategori": 1,
+    "tilleggsinfo": "Briller med rosa stenger på sidene",
+    "mistet_tidspunkt": null,
+    "mistet_sted": "",
+    "funnet_tidspunkt": null,
+    "funnet_sted": "",
+    "registreringstidspunkt": "2022-06-28T19:45:39.597Z",
+    "mobilnummer": "+4748202899",
+    "navn": "Kari",
+    "gruppe": "",
+    "plassering": "",
+    "type": 1,
+    "utlevert_til": "",
+    "utlevert_av": "",
+    "utlevert_tidspunkt": null,
+    "oppdatert_tidspunkt": "2022-06-28T19:45:39.606Z"
+  }
+},
+{
+  "model": "hittegods.oppdatering",
+  "pk": 1,
+  "fields": {
+    "hittegods": 2,
+    "registreringstidspunkt": "2022-06-28T18:46:22Z",
+    "beskrivelse": "Har forsøkt å ringe for å høre med innmelder, men fikk ikke svar"
+  }
+},
+{
+  "model": "hittegods.oppdatering",
+  "pk": 2,
+  "fields": {
+    "hittegods": 2,
+    "registreringstidspunkt": "2022-06-28T19:02:04Z",
+    "beskrivelse": "Innmelder ringte tilbake og er innformert om at soveposen kan hentes"
+  }
+},
+{
+  "model": "hittegods.oppdatering",
+  "pk": 3,
+  "fields": {
+    "hittegods": 8,
+    "registreringstidspunkt": "2022-06-28T19:41:18Z",
+    "beskrivelse": "Liggeunderlaget er funnet.\r\nHar ringt Ole, og han kommer og henter det når han kan."
+  }
+},
+{
+  "model": "hittegods.oppdatering",
+  "pk": 4,
+  "fields": {
+    "hittegods": 8,
+    "registreringstidspunkt": "2022-06-28T19:42:18Z",
+    "beskrivelse": "Liggeunderlaget er nå utlvert"
+  }
+},
+{
+  "model": "hittegods.oppdatering",
+  "pk": 5,
+  "fields": {
+    "hittegods": 9,
+    "registreringstidspunkt": "2022-06-28T19:44:04Z",
+    "beskrivelse": "En speider fra Kolsås mente han kjenner noen fra Oslo 7. som hadde mistet en bøttehatt.\r\nHan skulle be speideren komme innom etter middag."
+  }
+}
+]

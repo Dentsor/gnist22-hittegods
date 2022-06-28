@@ -1,0 +1,100 @@
+[
+{
+  "model": "hittegods.kategori",
+  "pk": 1,
+  "fields": {
+    "kategori_navn": "Kniv"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 2,
+  "fields": {
+    "kategori_navn": "Mobiltelefon"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 3,
+  "fields": {
+    "kategori_navn": "Skjerf/Speiderskjerf"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 4,
+  "fields": {
+    "kategori_navn": "Ligge-/Sitteunderlag"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 5,
+  "fields": {
+    "kategori_navn": "Bukse"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 6,
+  "fields": {
+    "kategori_navn": "Jakke"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 7,
+  "fields": {
+    "kategori_navn": "T-Skjorte"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 8,
+  "fields": {
+    "kategori_navn": "Diverse klær"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 9,
+  "fields": {
+    "kategori_navn": "Sovepose"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 10,
+  "fields": {
+    "kategori_navn": "Briller/Solbriller"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 11,
+  "fields": {
+    "kategori_navn": "Drikkeflaske"
+  }
+},
+{
+  "model": "hittegods.kategori",
+  "pk": 12,
+  "fields": {
+    "kategori_navn": "Diverse"
+  }
+},
+{
+  "model": "hittegods.type",
+  "pk": 1,
+  "fields": {
+    "type_navn": "Funnet"
+  }
+},
+{
+  "model": "hittegods.type",
+  "pk": 2,
+  "fields": {
+    "type_navn": "Mistet"
+  }
+}
+]
