@@ -1,5 +1,7 @@
 # Gnist 2022 - Hittegods
 
+**NB:** To back up/export the database periodically, see [Backups](#backups)
+
 ## Set up
 
 ```bash
@@ -32,13 +34,4 @@ make start
 
 ## Backups
 
-### Windows
-
-[Windows Scheduling](https://www.esri.com/arcgis-blog/products/product/analytics/scheduling-a-python-script-or-model-to-run-at-a-prescribed-time/)
-
-### Linux - Crontab
-
-```bash
-crontab -e
-# */10 * * * * /path/to/script
-```
+The Python-script `./export_periodically.py` will run an export of the database to CSV every 8 hours from start-time.
