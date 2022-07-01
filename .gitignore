@@ -1,4 +1,5 @@
 /env
+/psenv
 /backups/*
 !/backups/.gitkeep
 .vscode
